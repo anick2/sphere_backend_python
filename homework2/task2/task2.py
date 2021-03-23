@@ -14,17 +14,3 @@ class CustomMeta(type):
         new_cls = super().__new__(cls, name, bases, namespace)
         return new_cls
 
-
-# class CustomClass(metaclass=CustomMeta):
-#     x = 50
-#
-#     def line(self):
-#         return 100
-#
-#
-# inst = CustomClass()
-# print(inst.custom_x)
-# print(inst.custom_line())
-#
-# inst.x  # ошибка
-# inst.line() # ошибка
